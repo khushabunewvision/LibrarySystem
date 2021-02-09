@@ -49,8 +49,12 @@ public class TestMain
 		
 			while(true)
 			{
-				
-				i=loginValidationService.credententials();
+				System.out.println("*****Welcome To Knowledge Wala Library******");
+				System.out.println("Enter Username:-");
+				String userName=br.readLine();
+				System.out.println("Enter Password:-");
+				String password=br.readLine();
+				i=loginValidationService.fetchLogin(userName,password);
 				while(true)
 				{
 					if(i==1)
@@ -280,8 +284,13 @@ public class TestMain
 	{
 		while(true)
 		{
-			int i;
-			i=loginValidationService.credententials();
+			int i=4;
+			System.out.println("*****Welcome To Knowledge Wala Library******");
+			System.out.println("Enter Username:-");
+			String userName=br.readLine();
+			System.out.println("Enter Password:-");
+			String password=br.readLine();
+			i=loginValidationService.fetchLogin(userName,password);
 			while(true)
 			{
 				if(i==1)

@@ -15,14 +15,9 @@ public class LoginValidationServiceImpl implements LoginValidationService
 	InputStreamReader isr=new InputStreamReader(System.in);
 	BufferedReader br= new BufferedReader(isr);
 	
-	public int credententials() throws IOException 
+	public int fetchLogin(String userName,String password) throws IOException 
 	{
-		System.out.println("*****Welcome To Knowledge Wala Library******");
-		System.out.println("Enter Username:-");
-		String userName=br.readLine();
-		System.out.println("Enter Password:-");
-		String password=br.readLine();
-
+	
 		
 		if(userName.equals("admin") && (password.equals("admin")))
 		{

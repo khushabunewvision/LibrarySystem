@@ -40,7 +40,7 @@ public class UserDaoImpl implements UserDao
 		}
 		else
 		{
-			System.out.println("*******Displaying All Books******");
+			System.out.println("*******Displaying All Users******");
 			for(User u:userList)
 			{
 				System.out.println(u.toString());
